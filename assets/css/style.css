@@ -8,6 +8,23 @@
  z-index: 99;
 }
 
+#headerName{
+    font-size: 1.6em;
+}
+
+#aboutMeSection{
+    padding-top: 3em !important;
+}
+
+#aboutMeCard{
+    text-align: left;
+    margin-top: 25px;
+}
+
+#aboutMeHeader{
+    margin-top: -5px;
+}
+
 h1{
 		font-size: 4em;
 		font-family: arial,helvetica;
