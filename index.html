@@ -11,16 +11,29 @@
 
     <script type="text/javascript" src="assets/javascript/fullpage.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-    <script src="jquery-3.3.1.min.js" defer></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
 
 </head>
 
 <body>
 
     <div id="fullpage">
+        <div class="section " id="section0">
+            <video id="myVideo" loop muted data-autoplay>
+                <source src="assets/videos/skyline_Trim2.mp4" type="video/mp4">
+                <!-- <source src="imgs/flowers.webm" type="video/webm"> -->
+            </video>
+            <div class="layer">
+                <h1>Noah Anderson</h1>
+            </div>
+        </div>
         <div class="section">Some section</div>
-        <div class="section">Some section</div>
+        <div class="section">Some section
+            <div class="slide" data-anchor="slide1"> Slide 1 </div>
+            <div class="slide" data-anchor="slide2"> Slide 2 </div>
+            <div class="slide" data-anchor="slide3"> Slide 3 </div>
+            <div class="slide" data-anchor="slide4"> Slide 4 </div>
+        </div>
         <div class="section">Some section</div>
         <div class="section">Some section</div>
         <div class="section">Some section</div>
@@ -31,7 +44,9 @@
             sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
             anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthpage', 'lastPage'],
             menu: '#menu',
-            lazyLoad: true
+            lazyLoad: true,
+            parallax: false,
+            parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' }
         });
     </script>
 
