@@ -6,25 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Noah Anderson</title>
+
+    <script type="text/javascript" src="assets/javascript/fullpage.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/app.js" defer></script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="assets/css/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-    <script type="text/javascript" src="assets/javascript/fullpage.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <!-- EmailJS Script -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_MXAiEo7cocXKDbNvoFujf");
+        })();
+    </script>
 
 </head>
 
 <body>
 
+    <ul class="sidenav" id="mobile-menu">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img class="responsive-img" src="assets/images/portfolio-background.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="assets/images/professionalPhoto2.jpg"></a>
+
+                <a href="#name"><span class="white-text name">Noah Anderson</span></a>
+                <a href="mailto:NAnderson815@gmail.com"><span class="white-text email">Nanderson815@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a class="waves-effect" href="#aboutMeCont">About</a></li>
+        <li><a class="waves-effect" href="#skillsCont">Motivators</a></li>
+        <li><a class="waves-effect" href="#projectsCont">Projects</a></li>
+        <li><a class="waves-effect" href="#contactCont">Contact</a></li>
+        <li>
+            <!-- <div id="mobileSocialButtons" class="center-align"> -->
+            <a href="https://www.linkedin.com/in/noah-anderson-ba844b6b/"><i style=" color:#0d47a1; margin-right: 10px;"
+                    class="fab fa-linkedin-in fa-2x"></i></a>
+            <a href="https://github.com/nanderson815"><i style=" color:#0d47a1;" class="fab fa-github fa-2x"></i></a>
+            <!-- </div> -->
+        </li>
+
+    </ul>
+    <header id="header">
+        <!-- Main Header -->
+        <div class="navbar-fixed">
+            <nav id="navBar" class="transparent z-depth-0">
+                <div class="container nav-wrapper">
+                    <a href="#" id="headerName" class="brand-logo">Noah Anderson</a>
+                    <a href="#!" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#aboutMeCont">About</a></li>
+                        <li><a href="#skillsCont">Motivators</a></li>
+                        <li><a href="#projectsCont">Projects</a></li>
+                        <li><a href="#contactCont">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
     <div id="fullpage">
         <div class="section " id="section0">
             <video id="myVideo" loop muted data-autoplay>
                 <source src="assets/videos/skyline_Trim2.mp4" type="video/mp4">
-                <!-- <source src="imgs/flowers.webm" type="video/webm"> -->
             </video>
             <div class="layer">
-                <h1>Noah Anderson</h1>
+                <h1>Web Design</h1>
+                <h1>Graphic Design</h1>
+                <h1>SEO</h1>
             </div>
         </div>
         <div class="section">Some section</div>
@@ -39,17 +105,10 @@
         <div class="section">Some section</div>
     </div>
 
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthpage', 'lastPage'],
-            menu: '#menu',
-            lazyLoad: true,
-            parallax: false,
-            parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' }
-        });
-    </script>
-
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript for materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

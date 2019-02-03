@@ -1,5 +1,15 @@
+#header {
+ width: 100%;
+ background-color: #42403c;
+ background: rgba(0, 0, 0, 0.7);
+ position: fixed;
+ height: 50px;
+ top: 0;
+ z-index: 99;
+}
+
 h1{
-		font-size: 5em;
+		font-size: 4em;
 		font-family: arial,helvetica;
 		color: #fff;
 		margin:0;
@@ -39,7 +49,7 @@ h1{
 		z-index: 4;
 		width: 100%;
 		left: 0;
-		top: 43%;
+		top: 35%;
 
 		/*
 		* Preventing flicker on some browsers
